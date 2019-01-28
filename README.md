@@ -10,6 +10,9 @@ Sammlung von IFC assets als Einführung in IFC
 * => [IFC Schema](https://github.com/buildingSMART/Ifc)
 * => [Data Dictionary](https://github.com/buildingSMART/bSDD)
 * => [Productdaten](https://github.com/buildingSMART/ProductData)
+* => [BCF Format](https://github.com/buildingSMART/BCF-XML)
+* => [BCF API](https://github.com/buildingSMART/BCF-API)
+
 
 ## Musterdateien
 
