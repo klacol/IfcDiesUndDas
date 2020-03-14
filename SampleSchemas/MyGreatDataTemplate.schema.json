@@ -6,46 +6,39 @@
 	"type": "object",
 	"properties": {
 		"Volume": {
-			"description": "The description of the property",
+			"description": "The of the property",
 			"type": "number",
-			"maxLength": 36,
-			"nullable": false
+			"nullable": true
 		},
 		"Combustible": {
 			"description": "The description of the property",
 			"type": "boolean",
-			"maxLength": 255,
-			"nullable": false
+			"nullable": true
 		},
 		"ThermalTransmittance": {
 			"description": "The description of the property",
 			"type": "number",
-			"maxLength": 50,
-			"nullable": false
+			"nullable": true
 		},
 		"IsExternal": {
 			"description": "The description of the property",
 			"type": "boolean",
-			"maxLength": 50,
-			"nullable": false
+			"nullable": true
 		},
 		"ExtendToStructure": {
 			"description": "The description of the property",
 			"type": "boolean",
-			"maxLength": 50,
-			"nullable": false
+			"nullable": true
 		},
 		"LoadBearing": {
 			"description": "The description of the property",
 			"type": "boolean",
-			"maxLength": 50,
-			"nullable": false
+			"nullable": true
 		},
 		"Compartmentation": {
 			"description": "The description of the property",
 			"type": "boolean",
-			"maxLength": 50,
-			"nullable": false
+			"nullable": true
 		}
 	},
 	"required": [
