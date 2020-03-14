@@ -1,0 +1,55 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "MyGreatDataTemplate",
+	"title": "MyGreatDataTemplate",
+	"description": "Schema for data template MyGreatDataTemplate",
+	"type": "object",
+	"properties": {
+		"Volume": {
+			"description": "The description of the property",
+			"type": "number",
+			"maxLength": 36,
+			"nullable": false
+		},
+		"Combustible": {
+			"description": "The description of the property",
+			"type": "boolean",
+			"maxLength": 255,
+			"nullable": false
+		},
+		"ThermalTransmittance": {
+			"description": "The description of the property",
+			"type": "number",
+			"maxLength": 50,
+			"nullable": false
+		},
+		"IsExternal": {
+			"description": "The description of the property",
+			"type": "boolean",
+			"maxLength": 50,
+			"nullable": false
+		},
+		"ExtendToStructure": {
+			"description": "The description of the property",
+			"type": "boolean",
+			"maxLength": 50,
+			"nullable": false
+		},
+		"LoadBearing": {
+			"description": "The description of the property",
+			"type": "boolean",
+			"maxLength": 50,
+			"nullable": false
+		},
+		"Compartmentation": {
+			"description": "The description of the property",
+			"type": "boolean",
+			"maxLength": 50,
+			"nullable": false
+		}
+	},
+	"required": [
+		"Volume",
+		"ThermalTransmittance"
+	]
+}

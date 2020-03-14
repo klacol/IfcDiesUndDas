@@ -1,0 +1,14 @@
+{
+	"GlobalId": "fc844dd2-f71a-4a85-8010-8cd7154504a7",
+	"Name": "Wall xyz",
+	"Description": "Description of Wall",
+	"LateBindedDataTemplate": {
+		"Volume": 181698.20138837994,
+		"Combustible": false,
+		"ThermalTransmittance": 0.24,
+		"IsExternal": true,
+		"ExtendToStructure": false,
+		"LoadBearing": false,
+		"Compartmentation": false
+	}
+}

@@ -1,0 +1,35 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "Building",
+	"title": "Building",
+	"description": "Schema for objects of the type \"Building\"",
+	"type": "object",
+	"properties": {
+		"GlobalId": {
+			"description": "The unique id of the wall in the UUID notation according to IETF RFC 4122, e.g 123e4567-e89b-12d3-a456-426655440000",
+			"type": "string",
+			"maxLength": 36,
+			"nullable": false
+		},
+		"Name": {
+			"description": "The name of the wall",
+			"type": "string",
+			"maxLength": 255,
+			"nullable": false
+		},
+		"Description": {
+			"description": "The Description of the wall",
+			"type": "string",
+			"maxLength": 50,
+			"nullable": false
+		},
+		"LateBindedDataTemplate": {
+		  "description": "Definition if data template that can be lately binded to the schema. The late binded properties are not part of the core specification",
+		  "$ref": "MyGreatDataTemplate.schema.json"
+		}
+	},
+	"required": [
+		"GlobalId",
+		"Name"
+	]
+}
