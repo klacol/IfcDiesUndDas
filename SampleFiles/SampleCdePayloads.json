@@ -1,0 +1,569 @@
+{
+	"IfcProjectLibrary": {
+		"id": "i16",
+		"GlobalId": "1DbshdzGD71ejurQqQcxbw",
+		"Name": "Trimble Pre Pour Checklist",
+		"Description": "Must be completed before pouring concrete",
+		"Phase": "Design,Build,Operate",
+		"OwnerHistory": {
+			"id": "i23",
+			"ChangeAction": "modified",
+			"LastModifiedDate": 1569880432,
+			"CreationDate": 0,
+			"OwningUser": {
+				"id": "i5",
+				"ThePerson": {
+					"id": "i3",
+					"FamilyName": "Klaus",
+					"GivenName": "Aengenvoort",
+					"MiddleNames": "",
+					"PrefixTitles": "",
+					"SuffixTitles": ""
+				},
+				"TheOrganization": {
+					"id": "i4",
+					"Name": "CEN-TC442-WG2-TG3"
+				}
+			},
+			"OwningApplication": {
+				"id": "i6",
+				"Version": 4.0,
+				"ApplicationFullName": "xBIM Toolkit",
+				"ApplicationIdentifier": "xBIM",
+				"ApplicationDeveloper": {
+					"ref": "i4"
+				}
+			}
+		},
+		"Declares": {
+			"IfcRelDeclares": {
+				"id": "i24",
+				"pos": 0,
+				"GlobalId": "0H_u2sQyb0hQ_L_QmQyi1H",
+				"OwnerHistory": {
+					"id": "i2",
+					"ChangeAction": "added",
+					"LastModifiedDate": 1569880436,
+					"CreationDate": 0,
+					"OwningUser": {
+						"ref": "i5"
+					},
+					"OwningApplication": {
+						"ref": "i6"
+					}
+				},
+				"RelatedDefinitions": {
+					"IfcPropertySetTemplate": [
+						{
+							"id": "i25",
+							"pos": 0,
+							"GlobalId": "1du93BgADBs9agp9yaYf4e",
+							"Name": "Example property set template",
+							"Description": "test",
+							"TemplateType": "pset_typedrivenonly",
+							"ApplicableEntity": "IfcLightFixture/USERDEFINED",
+							"OwnerHistory": {
+								"ref": "i2"
+							},
+							"HasPropertyTemplates": {
+								"IfcSimplePropertyTemplate": [
+									{
+										"id": "i26",
+										"pos": 0,
+										"GlobalId": "fyqe1zyhevlpikwjn0xz3mvfs1n0iueb",
+										"Name": "Material",
+										"Description": "Here should be a good definition for the semantic meaning of this property",
+										"TemplateType": "p_singlevalue",
+										"PrimaryMeasureType": "IfcText",
+										"Expression": "",
+										"AccessState": "locked",
+										"OwnerHistory": {
+											"ref": "i2"
+										}
+									},
+									{
+										"id": "i27",
+										"pos": 1,
+										"GlobalId": "qaznupyrv3stbr0rqd33ifzamahe9inp",
+										"Name": "Material type",
+										"Description": "Here should be a good definition for the semantic meaning of this property",
+										"TemplateType": "p_enumeratedvalue",
+										"PrimaryMeasureType": "IfcLabel",
+										"Expression": "",
+										"AccessState": "locked",
+										"OwnerHistory": {
+											"ref": "i2"
+										},
+										"Enumerators": {
+											"Name": "Allow values for this property",
+											"EnumerationValues": {
+												"IfcLabel-wrapper": [
+													{
+														"pos": 0,
+														"$": "Steel"
+													},
+													{
+														"pos": 1,
+														"$": "Wood"
+													},
+													{
+														"pos": 2,
+														"$": "Stone"
+													}
+												]
+											}
+										}
+									},
+									{
+										"id": "i28",
+										"pos": 1,
+										"GlobalId": "qaznupyrv3stbr0rqd33ifzamahe9ino",
+										"Name": "Receive Condition",
+										"Description": "Here should be a good definition for the semantic meaning of this property",
+										"TemplateType": "p_enumeratedvalue",
+										"PrimaryMeasureType": "IfcLabel",
+										"Expression": "",
+										"AccessState": "locked",
+										"Enumerators": {
+											"Name": "Allow values for this property",
+											"EnumerationValues": {
+												"IfcLabel-wrapper": [
+													{
+														"pos": 0,
+														"$": "Good"
+													},
+													{
+														"pos": 1,
+														"$": "With Damages"
+													}
+												]
+											}
+										}
+									},
+									{
+										"id": "i45",
+										"pos": 17,
+										"GlobalId": "3VHFOwjl13sv6CBYkwU2wh",
+										"Name": "Angle",
+										"Description": "Step width for the tilt angle (X-Axis)",
+										"TemplateType": "p_singlevalue",
+										"PrimaryMeasureType": "IfcPlaneAngleMeasure",
+										"Expression": "",
+										"AccessState": "locked",
+										"OwnerHistory": {
+											"ref": "i2"
+										},
+										"PrimaryUnit": {
+											"IfcConversionBasedUnit": {
+												"id": "i46",
+												"UnitType": "planeangleunit",
+												"Name": "Grad",
+												"Dimensions": {
+													"id": "i49",
+													"LengthExponent": 0,
+													"MassExponent": 0,
+													"TimeExponent": 0,
+													"ElectricCurrentExponent": 0,
+													"ThermodynamicTemperatureExponent": 0,
+													"AmountOfSubstanceExponent": 0,
+													"LuminousIntensityExponent": 0
+												},
+												"ConversionFactor": {
+													"id": "i47",
+													"ValueComponent": {
+														"IfcReal-wrapper": 0.017453292519943295
+													},
+													"UnitComponent": {
+														"IfcSIUnit": {
+															"id": "i48",
+															"UnitType": "planeangleunit",
+															"Name": "radian"
+														}
+													}
+												}
+											}
+										}
+									},
+									{
+										"id": "i51",
+										"pos": 19,
+										"GlobalId": "1RPyGAgMf4hRTZ0DogLFnU",
+										"Name": "Weight",
+										"Description": "Weight of the product",
+										"TemplateType": "p_singlevalue",
+										"PrimaryMeasureType": "IfcMassMeasure",
+										"Expression": "",
+										"AccessState": "locked",
+										"OwnerHistory": {
+											"ref": "i2"
+										},
+										"PrimaryUnit": {
+											"IfcSIUnit": {
+												"id": "i52",
+												"UnitType": "massunit",
+												"Name": "gram"
+											}
+										}
+									},
+									{
+										"id": "i53",
+										"pos": 20,
+										"GlobalId": "1dPvrZN3vEIB0n0vwYvDcX",
+										"Name": "Width",
+										"Description": "Width of the luminaire housing or of the sensor housing.\nWidth is always parallel to the C0-C180 level. ",
+										"TemplateType": "p_singlevalue",
+										"PrimaryMeasureType": "IfcLengthMeasure",
+										"Expression": "",
+										"AccessState": "locked",
+										"OwnerHistory": {
+											"ref": "i2"
+										},
+										"PrimaryUnit": {
+											"IfcSIUnit": {
+												"id": "i54",
+												"UnitType": "lengthunit",
+												"Prefix": "milli",
+												"Name": "metre"
+											}
+										}
+									},
+									{
+										"id": "i54",
+										"pos": 20,
+										"GlobalId": "1dPvrZN3vEIB0n0vwYvDcY",
+										"Name": "Delivery Date",
+										"Description": "Delivery Date of the product",
+										"TemplateType": "p_singlevalue",
+										"PrimaryMeasureType": "IfcDate",
+										"Expression": "",
+										"AccessState": "locked"
+									},
+									{
+										"id": "i55",
+										"pos": 20,
+										"GlobalId": "1dPvrZN3vEIB0n0vwYvDcZ",
+										"Name": "Maintenance 1 Done?",
+										"Description": "",
+										"TemplateType": "p_singlevalue",
+										"PrimaryMeasureType": "IfcBoolean",
+										"Expression": "",
+										"AccessState": "locked"
+									}
+								]
+							}
+						},
+						{
+							"id": "i55",
+							"pos": 1,
+							"GlobalId": "39YjQ8L$9DxeKh_6JQ7bUN",
+							"Name": "The second PSet-Template in my Library",
+							"Description": "",
+							"TemplateType": "pset_typedrivenonly",
+							"ApplicableEntity": "IfcLightFixture/USERDEFINED",
+							"OwnerHistory": {
+								"ref": "i2"
+							},
+							"HasPropertyTemplates": {
+								"IfcSimplePropertyTemplate": [
+									{
+										"id": "i56",
+										"pos": 0,
+										"GlobalId": "1u_fA0qUmHuO00025QrE$V",
+										"Name": "GTIN",
+										"Description": "The Global Trade Item Number (GTIN) is an identifier for trade items developed by GS1 (www.gs1.org).",
+										"TemplateType": "p_singlevalue",
+										"PrimaryMeasureType": "IfcLabel",
+										"Expression": "",
+										"AccessState": "locked",
+										"OwnerHistory": {
+											"ref": "i2"
+										}
+									}
+								]
+							}
+						}
+					],
+					"IfcTypeProduct": [
+						{
+							"id": "i66",
+							"pos": 3,
+							"GlobalId": "0ngqL$C6vDZQ4TURyYILuM",
+							"Name": "Walltype 1",
+							"Description": "Description of Walltype 1",
+							"ApplicableOccurrence": "IfcWall",
+							"OwnerHistory": {
+								"ref": "i2"
+							},
+							"HasPropertySets": {
+								"IfcPropertySet": [
+									{
+										"id": "i67",
+										"pos": 0,
+										"GlobalId": "3PPuRn4FHFsQx$yjGo7bJX",
+										"Name": "Example property set",
+										"Description": "Property set with values",
+										"HasProperties": {
+											"IfcPropertySingleValue": [
+												{
+													"id": "i75",
+													"pos": 0,
+													"Name": "Material",
+													"Description": "",
+													"NominalValue": {
+														"IfcText-wrapper": "My material a free text"
+													}
+												},
+												{
+													"id": "i76",
+													"pos": 1,
+													"Name": "Material type",
+													"Description": "",
+													"NominalValue": {
+														"IfcLabel-wrapper": "Steel"
+													}
+												}
+											]
+										}
+									}
+								]
+							}
+						}
+					]
+				}
+			}
+		}
+	},
+	"IfcProject": {
+		"id": "i1",
+		"GlobalId": "3pcu5JvzDAnQLcUamGrUb7",
+		"Name": "TriluxLightingProducts",
+		"OwnerHistory": {
+			"ref": "i2"
+		}
+	},
+	"IfcWall": [
+		{
+			"id": "i3259",
+			"GlobalId": "2_SFbHotvFgO5X97E_27uW",
+			"Name": "Wall 1",
+			"Description": "Description of Wall 1",
+			"Tag": "47112345",
+			"ObjectType": "FIREDAMPER"
+		},
+		{
+			"id": "i3260",
+			"GlobalId": "1VDJMuoWPA4OVNtks2$UY0",
+			"Name": "Wall 2",
+			"Description": "Description of Wall 2",
+			"Tag": "47112346"
+		},
+		{
+			"id": "i3261",
+			"GlobalId": "39jntIOnv6XgBtjAUMJDSk",
+			"Name": "Wall 3",
+			"Description": "Description of Wall 3",
+			"Tag": "47112347"
+		},
+		{
+			"id": "i3262",
+			"GlobalId": "2UGW7WBUz4ZxRh4M8YtPrr",
+			"Name": "Wall 4",
+			"Description": "Description of Wall 4",
+			"Tag": "47112348"
+		}
+	],
+	"IfcPropertySet": [
+		{
+			"id": "i3267",
+			"GlobalId": "1NMbqRitG3Gx8An_QJRkax",
+			"Name": "Test property set",
+			"HasProperties": [
+				{
+					"IfcPropertySingleValue": [
+						{
+							"id": "i3261",
+							"Name": "Material",
+							"NominalValue": {
+								"IfcLabel-wrapper": "This is the value of my material property"
+							}
+						},
+						{
+							"id": "i3262",
+							"Name": "Delivery Date",
+							"NominalValue": {
+								"IfcDate-wrapper": "2020-06-08"
+							}
+						},
+						{
+							"id": "i3266",
+							"Name": "Angle",
+							"EnumerationValues": {
+								"IfcReal-wrapper": "90"
+							}
+						},
+						{
+							"id": "i3267",
+							"Name": "Maintenance 1 Done?",
+							"EnumerationValues": {
+								"IfcBoolean-wrapper": "true"
+							}
+						}
+					],
+					"IfcPropertyEnumeratedValue": [
+						{
+							"id": "i3264",
+							"Name": "Material type",
+							"EnumerationValues": {
+								"IfcLabel-wrapper": "Wood"
+							}
+						},
+						{
+							"id": "i3265",
+							"Name": "Receive Condition",
+							"EnumerationValues": {
+								"IfcLabel-wrapper": "Good"
+							}
+						}
+					]
+				}
+			]
+		}],
+		"IfcRelDefinesByProperties": [
+			{
+				"id": "i3268",
+				"GlobalId": "1VDJMuoWPA4OVUtks2$UY8",
+				"RelatedObjects": {
+					"ref": "i3259"
+				},
+				"RelatingPropertyDefinition": {
+					"IfcPropertySet": {
+						"ref": "i3267"
+					}
+				}
+			}
+		],
+		"IfcRelDefinesByTemplate": [
+			{
+				"id": "i68",
+				"GlobalId": "3ac$CRqNX83fFw7KuzSllO",
+				"RelatedPropertySets": {
+					"IfcPropertySet": {
+						"ref": "i3267",
+						"pos": 0
+					}
+				},
+				"RelatingTemplate": {
+					"ref": "i25"
+				}
+			}
+		],
+		"IfcClassification": [
+			{
+				"id": "i10",
+				"Edition": "1.0",
+				"EditionDate": "2018-12-27T00:00:00.0000000",
+				"Name": "Omniclass",
+				"Description": "The OmniClass Construction Classification System (known as OmniClass™ or OCCS) is a classification system for the construction industry. OmniClass is useful for many applications, from organizing library materials, product literature, and project information, to providing a classification structure for electronic databases. It incorporates other extant systems currently in use as the basis of many of its Tables – MasterFormat™ for work results, UniFormat for elements, and EPIC (Electronic Product Information Cooperation) for structuring products.",
+				"Location": "http://www.omniclass.org/",
+				"HasReferences": {
+					"IfcClassificationReference": {
+						"id": "i11",
+						"pos": 0,
+						"Identification": "23-35-47",
+						"Name": "Electrical Lighting",
+						"Description": ""
+					}
+				}
+			},
+			{
+				"id": "i13",
+				"Edition": 2015,
+				"EditionDate": "01.01.2015",
+				"Name": "Uniclass",
+				"Description": "Uniclass is a voluntary classification system for the construction industry that can be used for structuring project information, such as building information models (BIM).",
+				"Location": "https://www.thenbs.com/our-tools/introducing-uniclass-2015",
+				"HasReferences": {
+					"IfcClassificationReference": {
+						"id": "i14",
+						"pos": 0,
+						"Identification": "CA-70-10-30",
+						"Name": "Site lighting equipment",
+						"Description": ""
+					}
+				}
+			}
+		],
+		"IfcRelAssociatesClassification": [
+			{
+				"id": "i12",
+				"GlobalId": "0EB9LjEoTCSuHFZClNJpey",
+				"RelatedObjects": {
+					"IfcTypeProduct": [
+						{
+							"ref": "i66",
+							"pos": 0
+						}
+					]
+				},
+				"RelatingClassification": {
+					"IfcClassificationReference": {
+						"ref": "i11"
+					}
+				}
+			},
+			{
+				"id": "i15",
+				"GlobalId": "0AxoYWV$LC_eym2HEZ5xck",
+				"RelatedObjects": {
+					"IfcTypeProduct": [
+						{
+							"ref": "i66",
+							"pos": 0
+						}
+					]
+				},
+				"RelatingClassification": {
+					"IfcClassificationReference": {
+						"ref": "i14"
+					}
+				}
+			}
+		],
+		"IfcDocumentInformation": [
+			{
+				"id": "i73",
+				"Identification": "3331_G2_D1_LED_01.3ds",
+				"Name": "3331_G2_D1_LED_01.3ds",
+				"Description": "3D-Visualisierung",
+				"Location": "3DSModelFile/3331_G2_D1_LED_01.3ds",
+				"Purpose": "Product information",
+				"IntendedUse": "Product information",
+				"Scope": "Europa",
+				"Revision": 1.0,
+				"CreationTime": "30.09.2019",
+				"ElectronicFormat": "image/x-3ds",
+				"ValidFrom": "01.01.2018",
+				"ValidUntil": "31.12.2021",
+				"Confidentiality": "public"
+			}
+		],
+		"IfcRelAssociatesDocument": [
+			{
+				"id": "i74",
+				"GlobalId": "23b5vwB5j0J8Wi4wNpHAqD",
+				"RelatedObjects": {
+					"IfcTypeProduct": [
+						{
+							"ref": "i66",
+							"pos": 0
+						}
+					]
+				},
+				"RelatingDocument": {
+					"IfcDocumentInformation": {
+						"ref": "i73"
+					}
+				}
+			}
+		]
+	}
